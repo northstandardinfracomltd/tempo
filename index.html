@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       
+              body {
+            margin: 0px;
+        }
+      
               ::selection {
         background-color: #ffd00082;
         color: #1b1b20;
@@ -144,7 +148,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #fff, #fff, #fff, #fff);
+    background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #000, #000, #000, #000);
     z-index: -1;
     border-radius: 13px; /* Pour arrondir les coins de la bordure */
   }
@@ -156,7 +160,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white; /* Même couleur que l'arrière-plan de la div */
+    background: #111010; /* Même couleur que l'arrière-plan de la div */
     z-index: -1;
     border-radius: 11px; /* Pour s'adapter aux coins arrondis de la bordure */
   }
@@ -191,6 +195,46 @@
         font-weight: 400;
         letter-spacing: 0px;
         color: #000;
+        line-height: 41px;
+        cursor: default;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      
+      
+      
+      
+      
+            .big-title-dark {
+        
+    max-width: 750px;
+        text-align: left;
+        font-size: 60px !important;
+        font-family: "saasduoTIL" !important;
+        font-weight: 400;
+        letter-spacing: -1.8px !important;
+        color: #fff;
+        line-height: 41px;
+        cursor: default;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 120px;
+        margin-bottom: 0px;
+      }
+      
+      
+          
+      .text-block-dark {
+        
+    max-width: 750px;
+        text-align: left;
+        font-size: 24px !important;
+        font-family: "saasduoPAR" !important;
+        font-weight: 400;
+        letter-spacing: 0px;
+        color: #fff;
         line-height: 41px;
         cursor: default;
         padding-left: 0px;
@@ -293,7 +337,7 @@
             align-items: center;
             justify-content: center;
             padding: 10px;
-            background-color: #ffffff;
+            background-color: #000;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -321,15 +365,27 @@
         }
       
       
+                          .dark {
+            background-color: black;
+                width: 100%;
+                            padding-bottom: 30px; padding-top: 30px;
+        }
+      
+                    .flat {
+            background-color: lightgrey;
+                width: 100%;
+        }
+      
+      
       
               .grid-container99 {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
-            padding: 20px;
+            padding: 0px;
                 
                             width: 100%;
-                    max-width: 800px;
+                    max-width: 1000px;
           margin-left: auto;
           margin-right: auto;
                 
@@ -353,11 +409,11 @@
 <body>
   
   
-  
+       <div class="dark">
     
 <div class="containerB">
-<h1 class="big-title">Perks</h1>
-<h2 class="text-block">
+<h1 class="big-title-dark">Perks</h1>
+<h2 class="text-block-dark">
 Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
 <span id="moreText23" class="hidden">
 — We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
@@ -383,7 +439,7 @@ toggleBtn23.textContent = "Learn more";
 </div>
   
   
-    
+       
   
         <div class="united">
   
@@ -430,7 +486,7 @@ toggleBtn23.textContent = "Learn more";
         </div>
     </div>
   
-      </div>
+      </div>    </div>
   
   
   
@@ -597,7 +653,7 @@ toggleBtn21.textContent = "Learn more";
   
   
   
-  
+    <div class="flat">
   <div class="grid-container99">
     <div class="grid-item99">
         <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2020.51.36.png?v=1716058325297" alt="Logo">
@@ -616,7 +672,7 @@ toggleBtn21.textContent = "Learn more";
         <p>The most helpful features are the organizational tools, such as flagging tickets based on priority, dept etc... Tickets can also be assigned to individual users regardless of group and team.</p>
     </div>
 </div>
-  
+  </div>
   
   
 
