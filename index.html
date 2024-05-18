@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .container {
+        .containerA {
             width: 100%;
+                    max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .sub-div {
@@ -14,11 +17,12 @@
             align-items: center;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
+          box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
         }
 
         .icon img {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
         }
 
         .text {
@@ -43,7 +47,6 @@
       
         .multicolor-border {
     position: relative;
-    padding: 20px; /* Espace interne de la div pour éviter que le contenu ne touche la bordure */
     background: white; /* Couleur de fond de la div */
     z-index: 1;
   }
@@ -78,7 +81,7 @@
     <title>Grid Divs Example</title>
 </head>
 <body>
-    <div class="container">
+    <div class="containerA">
         <div class="sub-div multicolor-border">
             <div class="icon">
                 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2019.36.34.png?v=1716053817471" alt="icon">
