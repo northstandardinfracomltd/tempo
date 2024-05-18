@@ -93,8 +93,8 @@
 
         .button a {
             text-decoration: none;
-            color: white;
-            background-color: #007BFF;
+            color: black;
+            background-color: lightgrey;
             padding: 5px 10px;
             border-radius: 5px;
         }
@@ -141,8 +141,6 @@
         color: #000;
         line-height: 41px;
         cursor: default;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 120px;
@@ -162,8 +160,6 @@
         color: #000;
         line-height: 41px;
         cursor: default;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 40px;
@@ -181,41 +177,105 @@
                         
   }
       
+      
+        
+        .container2 {
+          
+                      width: 100%;
+                    max-width: 800px;
+          
+          
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 280px;
+        padding-left: 0px;
+        padding-right: 0px;
+          
+      }
+
+  
+        .item2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px 20px 12px 20px;
+        border: 1px solid #ebe5ebc9;
+        border-radius: 23px;
+        justify-content: center;
+        text-align: center;
+        background: #ffffffab;
+      }
+
+  .item2 img {
+    width: 96%;
+    max-width: 275px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .item2:hover {
+    cursor: default !important;
+    border: 1px solid #f0ecf7;
+    background: #fcf9ff;
+}
+  
+  .item2:hover img {
+    transform: scale(1.03);
+    transition-duration: 0.2s;
+}
+
+        .deskrib {
+        vertical-align: middle;
+        text-align: center;
+        font-size: 24px !important;
+        font-family: "saasduoPAR" !important;
+        font-weight: 400;
+        letter-spacing: 0px;
+        color: #1b1b20 !important;
+        line-height: 40px;
+        cursor: default;
+      }
+      
     </style>
     <title>Grid Divs Example</title>
 </head>
 <body>
   
   
-  <div class="containerB">
-                    <h1 class="big-title">Customers</h1>
-                                                                        <h2 class="text-block">
+<div class="containerB">
+<h1 class="big-title">Products</h1>
+<h2 class="text-block">
 Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
-
-  <span id="moreText2" class="hidden">
-    — We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
-  </span>
-  <a href="#" id="toggleBtn2" class="fapy">Learn more</a>
+<span id="moreText2" class="hidden">
+— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
+</span>
+<a href="#" id="toggleBtn2" class="fapy">Learn more</a>
 </h2>
-    
-                        <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const toggleBtn2 = document.getElementById("toggleBtn2");
-    const moreText2 = document.getElementById("moreText2");
-
-    toggleBtn2.addEventListener("click", function(event) {
-      event.preventDefault();
-      if (moreText2.classList.contains("hidden")) {
-        moreText2.classList.remove("hidden");
-        toggleBtn2.textContent = "Show less";
-      } else {
-        moreText2.classList.add("hidden");
-        toggleBtn2.textContent = "Learn more";
-      }
-    });
-  });
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const toggleBtn2 = document.getElementById("toggleBtn2");
+const moreText2 = document.getElementById("moreText2");
+toggleBtn2.addEventListener("click", function(event) {
+event.preventDefault();
+if (moreText2.classList.contains("hidden")) {
+moreText2.classList.remove("hidden");
+toggleBtn2.textContent = "Show less";
+} else {
+moreText2.classList.add("hidden");
+toggleBtn2.textContent = "Learn more";
+}
+});
+});
 </script>  
-     </div>
+</div>
+  
+  
     <div class="containerA">
         <div class="sub-div multicolor-border">
             <div class="icon">
@@ -233,7 +293,7 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
                 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2019.36.34.png?v=1716053817471" alt="icon">
             </div>
             <div class="text">
-                <span class="highlight">Premier</span> Transform idea into platform for startup
+                <span class="highlight">Logical</span> Transform idea into platform for startup
             </div>
             <div class="button">
                 <a href="#">Cancel</a>
@@ -244,7 +304,7 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
                 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2019.36.34.png?v=1716053817471" alt="icon">
             </div>
             <div class="text">
-                <span class="highlight">Premier</span> Transform idea into platform for startup
+                <span class="highlight">Fluence</span> Transform idea into platform for startup
             </div>
             <div class="button">
                 <a href="#">Cancel</a>
@@ -255,12 +315,103 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
                 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2019.36.34.png?v=1716053817471" alt="icon">
             </div>
             <div class="text">
-                <span class="highlight">Premier</span> Transform idea into platform for startup
+                <span class="highlight">Elastic</span> Transform idea into platform for startup
             </div>
             <div class="button">
                 <a href="#">Cancel</a>
             </div>
         </div>
     </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="containerB">
+<h1 class="big-title">How</h1>
+<h2 class="text-block">
+Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
+<span id="moreText21" class="hidden">
+— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
+</span>
+<a href="#" id="toggleBtn21" class="fapy">Learn more</a>
+</h2>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const toggleBtn21 = document.getElementById("toggleBtn21");
+const moreText21 = document.getElementById("moreText21");
+toggleBtn21.addEventListener("click", function(event) {
+event.preventDefault();
+if (moreText21.classList.contains("hidden")) {
+moreText21.classList.remove("hidden");
+toggleBtn21.textContent = "Show less";
+} else {
+moreText21.classList.add("hidden");
+toggleBtn21.textContent = "Learn more";
+}
+});
+});
+</script>  
+</div>
+  
+  
+  
+  
+  
+  
+          <div class="container2">
+          
+          <div class="item2">
+            <img
+              src="https://cdn.glitch.global/d9212453-1bde-4e72-bc28-351dcdf38637/SaaSduo1.svg?v=1715846065102"
+              alt="Image 1"
+            />
+            <p class="deskrib">
+              Custom features and frontend softwares and platforms for SMBs
+            </p>
+          </div>
+
+        
+          <div class="item2">
+            <img
+              src="https://cdn.glitch.global/d9212453-1bde-4e72-bc28-351dcdf38637/SaaSduo2.svg?v=1715846065536"
+              alt="Image 2"
+            />
+            <p class="deskrib">
+              Synchronization and integration of favorite and third-party tools
+            </p>
+          </div>
+
+        
+          <div class="item2">
+            <img
+              src="https://cdn.glitch.global/d9212453-1bde-4e72-bc28-351dcdf38637/SaaSduo3.svg?v=1715846065931"
+              alt="Image 3"
+            />
+            <p class="deskrib">
+              Browser-friendly products (web), no download required
+            </p>
+          </div>
+
+   
+          <div class="item2">
+            <img
+              src="https://cdn.glitch.global/d9212453-1bde-4e72-bc28-351dcdf38637/SaaSduo4.svg?v=1715846062358"
+              alt="Image 4"
+            />
+            <p class="deskrib">
+              Transparent all-inclusive monthly fee, predictive pay-as-you-go
+            </p>
+          </div>
+          
+          
+        </div>
+  
+  
+  
+  
+  
 </body>
 </html>
