@@ -128,6 +128,39 @@
     z-index: -1;
     border-radius: 11px; /* Pour s'adapter aux coins arrondis de la bordure */
   }
+      
+      
+            
+        .multicolor-border2 {
+    position: relative;
+    background: white; /* Couleur de fond de la div */
+    z-index: 1;
+  }
+      
+  .multicolor-border2::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #fff, #fff, #fff, #fff);
+    z-index: -1;
+    border-radius: 13px; /* Pour arrondir les coins de la bordure */
+  }
+
+  .multicolor-border2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white; /* Même couleur que l'arrière-plan de la div */
+    z-index: -1;
+    border-radius: 11px; /* Pour s'adapter aux coins arrondis de la bordure */
+  }
+
 
             
       .big-title {
@@ -248,6 +281,10 @@
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 10px;
+                           width: 100%;
+                    max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .grid-item44 {
@@ -257,7 +294,6 @@
             justify-content: center;
             padding: 10px;
             background-color: #ffffff;
-            border: 1px solid #ccc;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -277,8 +313,37 @@
           .united {
                         display: flex;
             justify-content: center;
-            align-items: center;
-            margin: 0;
+            align-items: center;            
+                       width: 100%;
+                    max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+      
+      
+              .grid-container99 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+                
+                            width: 100%;
+                    max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+                
+        }
+        .grid-item99 {
+            text-align: left;
+        }
+        .grid-item99 img {
+            max-width: 150px;
+            height: auto;
+        }
+        .grid-item99 p {
+            font-size: 13px;
+            color: grey;
         }
       
       
@@ -290,47 +355,76 @@
   
   
     
+<div class="containerB">
+<h1 class="big-title">Perks</h1>
+<h2 class="text-block">
+Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
+<span id="moreText23" class="hidden">
+— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
+</span>
+<a href="#" id="toggleBtn23" class="fapy">Learn more</a>
+</h2>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const toggleBtn23 = document.getElementById("toggleBtn23");
+const moreText23 = document.getElementById("moreText23");
+toggleBtn23.addEventListener("click", function(event) {
+event.preventDefault();
+if (moreText23.classList.contains("hidden")) {
+moreText23.classList.remove("hidden");
+toggleBtn23.textContent = "Show less";
+} else {
+moreText23.classList.add("hidden");
+toggleBtn23.textContent = "Learn more";
+}
+});
+});
+</script>  
+</div>
+  
+  
+    
   
         <div class="united">
   
       <div class="grid-container44">
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
-        <div class="grid-item44">
+        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/svg-gobbler%20(6).svg?v=1716057105546" alt="Icon">
             <h3>Mon titre</h3>
         </div>
@@ -500,6 +594,29 @@ toggleBtn21.textContent = "Learn more";
           
           
         </div>
+  
+  
+  
+  
+  <div class="grid-container99">
+    <div class="grid-item99">
+        <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2020.51.36.png?v=1716058325297" alt="Logo">
+        <p>The most helpful features are the organizational tools, such as flagging tickets based on priority, dept etc... Tickets can also be assigned to individual users regardless of group and team.</p>
+    </div>
+    <div class="grid-item99">
+        <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2020.51.36.png?v=1716058325297" alt="Logo">
+        <p>The most helpful features are the organizational tools, such as flagging tickets based on priority, dept etc... Tickets can also be assigned to individual users regardless of group and team.</p>
+    </div>
+    <div class="grid-item99">
+        <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2020.51.36.png?v=1716058325297" alt="Logo">
+        <p>The most helpful features are the organizational tools, such as flagging tickets based on priority, dept etc... Tickets can also be assigned to individual users regardless of group and team.</p>
+    </div>
+    <div class="grid-item99">
+        <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Capture%20d%E2%80%99e%CC%81cran%202024-05-18%20a%CC%80%2020.51.36.png?v=1716058325297" alt="Logo">
+        <p>The most helpful features are the organizational tools, such as flagging tickets based on priority, dept etc... Tickets can also be assigned to individual users regardless of group and team.</p>
+    </div>
+</div>
+  
   
   
 
