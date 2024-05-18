@@ -4,26 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      
+              ::selection {
+        background-color: #ffd00082;
+        color: #1b1b20;
+      }
+
+      @font-face {
+        font-family: saasduoTIL;
+        font-weight: bold;
+        src: url("https://cdn.glitch.global/4d7db198-d06b-43a0-a17b-b43d16d2bbce/SaaSduo%20Secondary?v=1692806478312")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: saasduoPAR;
+        font-weight: bold;
+        src: url("https://cdn.glitch.global/4d7db198-d06b-43a0-a17b-b43d16d2bbce/SaaSduo%20more?v=1692822723823")
+          format("opentype");
+      }
+
+      @font-face {
+        font-family: saasduoBTN;
+        font-weight: bold;
+        src: url("https://cdn.glitch.global/4d7db198-d06b-43a0-a17b-b43d16d2bbce/SaaSduo%20Button?v=1692822927520")
+          format("opentype");
+      }
+
+      .science {
+        position: relative;
+        overflow: hidden;
+      }
+
+      
+      
         .containerA {
             width: 100%;
-                    max-width: 1000px;
+                    max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+            .containerB {
+            width: 100%;
+                    max-width: 800px;
           margin-left: auto;
           margin-right: auto;
         }
 
         .sub-div {
+          cursor: pointer;
             display: grid;
-            grid-template-columns: 10% 70% 20%;
+            grid-template-columns: 6% 75% 19%;
             align-items: center;
             padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+          margin-bottom: 14px;
           box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
         }
 
         .icon img {
             width: 30px;
             height: 30px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
         }
+      
+              .icon {
+            width: 30px;
+            height: 30px;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
 
         .text {
             text-align: left;
@@ -60,7 +114,7 @@
     bottom: -2px;
     background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #3b84f2, #2871fc, #27bdf1, #71e8e8);
     z-index: -1;
-    border-radius: 8px; /* Pour arrondir les coins de la bordure */
+    border-radius: 13px; /* Pour arrondir les coins de la bordure */
   }
 
   .multicolor-border::after {
@@ -72,15 +126,96 @@
     bottom: 0;
     background: white; /* Même couleur que l'arrière-plan de la div */
     z-index: -1;
-    border-radius: 5px; /* Pour s'adapter aux coins arrondis de la bordure */
+    border-radius: 11px; /* Pour s'adapter aux coins arrondis de la bordure */
   }
-</styl
+
+            
+      .big-title {
+        
+    max-width: 750px;
+        text-align: left;
+        font-size: 60px !important;
+        font-family: "saasduoTIL" !important;
+        font-weight: 400;
+        letter-spacing: -1.8px !important;
+        color: #000;
+        line-height: 41px;
+        cursor: default;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 120px;
+        margin-bottom: 0px;
+      }
       
+      
+          
+      .text-block {
+        
+    max-width: 750px;
+        text-align: left;
+        font-size: 24px !important;
+        font-family: "saasduoPAR" !important;
+        font-weight: 400;
+        letter-spacing: 0px;
+        color: #000;
+        line-height: 41px;
+        cursor: default;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      
+                  .hidden {
+    display: none;
+  }
+      
+                            .fapy {
+    z-index: 10000000000;
+                        color: #05f0ff;
+                        text-decoration: none;
+                        
+  }
       
     </style>
     <title>Grid Divs Example</title>
 </head>
 <body>
+  
+  
+  <div class="containerB">
+                    <h1 class="big-title">Customers</h1>
+                                                                        <h2 class="text-block">
+Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
+
+  <span id="moreText2" class="hidden">
+    — We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
+  </span>
+  <a href="#" id="toggleBtn2" class="fapy">Learn more</a>
+</h2>
+    
+                        <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn2 = document.getElementById("toggleBtn2");
+    const moreText2 = document.getElementById("moreText2");
+
+    toggleBtn2.addEventListener("click", function(event) {
+      event.preventDefault();
+      if (moreText2.classList.contains("hidden")) {
+        moreText2.classList.remove("hidden");
+        toggleBtn2.textContent = "Show less";
+      } else {
+        moreText2.classList.add("hidden");
+        toggleBtn2.textContent = "Learn more";
+      }
+    });
+  });
+</script>  
+     </div>
     <div class="containerA">
         <div class="sub-div multicolor-border">
             <div class="icon">
