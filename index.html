@@ -890,10 +890,10 @@ toggleBtn23.textContent = "Learn more";
   
 <div class="grid-container">
 
-    <div class="grid-item color1"></div>
-    <div class="grid-item color2"></div>
-    <div class="grid-item color3"></div>
-    <div class="grid-item color4"></div>    <div class="grid-item color1"></div>
+    <div class="grid-item color1 stay"></div>
+    <div class="grid-item color2 stay"></div>
+    <div class="grid-item color3 stay"></div>
+    <div class="grid-item color4 stay"></div>    <div class="grid-item color1 stay"></div>
     <div class="grid-item color2"></div>
     <div class="grid-item color3"></div>
     <div class="grid-item color4"></div>    <div class="grid-item color1"></div>
@@ -1003,21 +1003,29 @@ function isInViewport(element) {
 // Fonction pour afficher ou masquer les éléments aléatoirement lorsqu'ils entrent ou sortent de la vue
 function toggleItemsRandomlyOnScroll() {
     gridItems.forEach(item => {
-        if (isInViewport(item) && item.style.opacity == '0') {
-            setTimeout(() => {
-                item.style.opacity = '1';
-            }, Math.random() * 1000); // délai aléatoire jusqu'à 1 seconde
-        } else if (!isInViewport(item) && item.style.opacity == '1') {
-            setTimeout(() => {
-                item.style.opacity = '0';
-            }, Math.random() * 1000); // délai aléatoire jusqu'à 1 seconde
+        if (!item.classList.contains('stay')) {
+            if (isInViewport(item) && item.style.opacity == '0') {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                }, Math.random() * 1000); // délai aléatoire jusqu'à 1 seconde
+            } else if (!isInViewport(item) && item.style.opacity == '1') {
+                setTimeout(() => {
+                    item.style.opacity = '0';
+                }, Math.random() * 1000); // délai aléatoire jusqu'à 1 seconde
+            }
+        } else {
+            item.style.opacity = '1'; // Toujours afficher les éléments avec la classe 'stay'
         }
     });
 }
 
-// Initialiser l'opacité à 0 pour tous les éléments
+// Initialiser l'opacité à 0 pour tous les éléments sauf ceux avec la classe 'stay'
 gridItems.forEach(item => {
-    item.style.opacity = '0';
+    if (!item.classList.contains('stay')) {
+        item.style.opacity = '0';
+    } else {
+        item.style.opacity = '1';
+    }
 });
 
 // Écouteur d'événement pour détecter le défilement de la page
