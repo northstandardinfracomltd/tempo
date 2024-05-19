@@ -402,12 +402,29 @@
       
       
                           .dark {
-                            
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
                             
                        background: radial-gradient(farthest-side at bottom left,#3e1961,transparent 500px),radial-gradient(farthest-side at center,#3e1961,transparent),radial-gradient(farthest-side at top right,#3e1961,#3e1961,transparent 900px),radial-gradient(farthest-side at bottom right,#28044a,#28044a,transparent 900px);
                 width: 100%;
-                            padding-bottom: 30px; padding-top: 30px;
+                            padding-bottom: 80px; padding-top: 30px;
         }
+      
+      
+      .dark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/SaaSduo29382398238Logo2938232938239232.svg?v=1716062091253);
+    background-size: cover;
+    opacity: 0.09;
+}
       
                                 .darkA {
                             
@@ -551,7 +568,7 @@
       
                     .principale {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 40% 60%;
             align-items: center;
             padding: 10px;
                       
@@ -590,17 +607,18 @@
             .FormBlock1 {
         background-color: blue;
         width: 100%;
-        max-width: 520px;
+        max-width: 480px;
     padding-top: 7px;
             padding-bottom: 7px;
             padding-right: 7px;
             padding-left: 7px;
-        
+        z-index: 100000000;
+    position: absolute;
         box-sizing: border-box;
-        margin-right: auto;
+        margin-left: auto;
     border-radius: 23px;
-    margin-top: 30px;
-        margin-bottom: 40px;
+margin-top: -135px;
+              margin-bottom: 40px;
     }
           
       
