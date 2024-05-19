@@ -157,11 +157,11 @@
   .multicolor-border2::before {
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #000, #000, #000, #000);
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #252537, #252537, #252537, #252537);
     z-index: -1;
     border-radius: 13px; /* Pour arrondir les coins de la bordure */
   }
@@ -173,7 +173,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #111010; /* Même couleur que l'arrière-plan de la div */
+    background: #252537; /* Même couleur que l'arrière-plan de la div */
     z-index: -1;
     border-radius: 11px; /* Pour s'adapter aux coins arrondis de la bordure */
   }
@@ -367,7 +367,7 @@
             align-items: center;
             justify-content: center;
             padding: 10px;
-            background-color: #000;
+            background-color: transparent;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -396,10 +396,17 @@
       
       
                           .dark {
-            background-color: black;
+                            
+            background: radial-gradient(farthest-side at bottom left,#12122c,transparent 500px),radial-gradient(farthest-side at center,#12122c,transparent),radial-gradient(farthest-side at top right,#12122c,#12122c,transparent 900px),radial-gradient(farthest-side at bottom right,#12122c,#12122c,transparent 900px);
                 width: 100%;
                             padding-bottom: 30px; padding-top: 30px;
         }
+      
+                                .darkA {
+                            
+            background-color: #12122c;
+        }
+      
       
                     .flat {
             background-color: lightgrey;
@@ -759,7 +766,7 @@
   
   
   
-  
+       <div class="darkA">
        <div class="dark">
          
          
@@ -877,7 +884,7 @@ toggleBtn23.textContent = "Learn more";
         </div>
     </div>
   
-      </div>    </div>
+      </div>  </div>    </div>
   
   
   
