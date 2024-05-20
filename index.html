@@ -10,9 +10,7 @@
         padding: 0;
         height: 100%;
         font-family: Arial, sans-serif;
-      background-color: #fffff;
-        background-image: linear-gradient(rgba(255 255 255) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255) 1px, transparent 1px);
-        background-size: 57px 57px; /* Taille des cellules du quadrillage */
+      background-color: white;
         }
       
               ::selection {
@@ -116,25 +114,25 @@
             border-radius: 5px;
         }
       
-        .multicolor-border {
+        .WWmulticolor-border {
     position: relative;
     background: white; /* Couleur de fond de la div */
     z-index: 1;
   }
 
-  .multicolor-border::before {
+  .WWmulticolor-border::before {
     content: "";
     position: absolute;
     top: -2px;
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #fee077, #d4e396, #8de0d2, #3b84f2, #2871fc, #27bdf1, #71e8e8);
+    background: linear-gradient(183deg, #aa74e8, #07f0ff, #c6d027, #258ed9, #16b38d);
     z-index: -1;
     border-radius: 13px; /* Pour arrondir les coins de la bordure */
   }
 
-  .multicolor-border::after {
+  .WWmulticolor-border::after {
     content: "";
     position: absolute;
     top: 0;
@@ -446,7 +444,7 @@
       
             
                           .robe {
-            background-color: pink;
+            background: radial-gradient(farthest-side at bottom left,#7edd92,transparent 500px),radial-gradient(farthest-side at center,#fff,transparent),radial-gradient(farthest-side at top right,#6ec500,#cdff3f,transparent 900px),radial-gradient(farthest-side at bottom right,#eefdd1,#2aac67,transparent 900px);
                 width: 100%;
                             padding-bottom: 30px; padding-top: 30px;
         }
@@ -574,11 +572,11 @@
             }
       
                     .principale {
-            display: grid;
-            grid-template-columns: 40% 60%;
+            display: flex;
             align-items: center;
+                      justify-content: center;
             padding: 10px;
-                      
+                      height: 600px;
                                   width: 100%;
                     max-width: 900px;
           margin-left: auto;
@@ -807,7 +805,6 @@ padding-left: 60px;    }
          
          
          <div class="principale">
-<div class="principale-grid1">
 
 <h1 class="big-title-dark">You Have a Fantastic Idea</h1>
 <h2 class="text-block-dark">
@@ -817,10 +814,9 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
 </span>
 <a href="#" id="toggleBtn23" class="fapy">Learn more</a>
 </h2>
-</div>
-<div class="principale-grid1 principale-grid1A">
 
-  <div class="FormBlock1">
+           
+             <div class="FormBlock1">
     <h1 class="big-title-dark-blue">Create your saas</h1>
                 <div class="FormBlock">
     <div class="FormField">
@@ -842,7 +838,7 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
       
       </div>    </div></div> 
   
-</div> 
+
 </div>
          
          
