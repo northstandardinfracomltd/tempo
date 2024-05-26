@@ -62,7 +62,6 @@
       
                   .containerC {
             width: 100%;
-                    max-width: 900px;
           margin-left: auto;
           margin-right: auto;
                     
@@ -515,7 +514,6 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
         }
       
                                .robeZ {
-            background-color: blue;
                 width: 100%;
                                  margin-top: 80px;
                             padding-bottom: 30px; padding-top: 30px;
@@ -1607,59 +1605,36 @@ toggleBtn21.textContent = "Learn more";
          
          
     <div class="containerC">
-<h1 class="ma-title">Strukture</h1>
-<h2 class="text-block">
-Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
-<span id="moreText29" class="hidden">
-— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
-</span>
-<a href="#" id="toggleBtn29" class="fapy">Learn more</a>
-</h2>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-const toggleBtn29 = document.getElementById("toggleBtn29");
-const moreText29 = document.getElementById("moreText29");
-toggleBtn29.addEventListener("click", function(event) {
-event.preventDefault();
-if (moreText29.classList.contains("hidden")) {
-moreText29.classList.remove("hidden");
-toggleBtn29.textContent = "Show less";
-} else {
-moreText29.classList.add("hidden");
-toggleBtn29.textContent = "Learn more";
-}
-});
-});
-</script>
       
-<div class="merged">  
-<div class="A">  
+<div class="merged yellow1">  
+<div class="XENON">  
 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/saasduo000011.svg?v=1716065310711" alt="Logo">   
 </div>
 <div class="A">  
-  <h1 class="big-title">Beyond</h1>
+  <h1 class="ma-title">Beyond</h1>
 <p class="Atext">The most helpful features are the organizational tools, such as flagging tickets based on priority</p>
                             <div class="buttonZZ">
                 <a href="#">Contact us</a>
             </div></div>   
 </div>
       
-      <div class="merged">  
-<div class="A">  
+      <div class="merged green1">  
+<div class="XENON">  
+
 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/saasduo000010.svg?v=1716065311273" alt="Logo">   
 </div>
 <div class="A">  
-<p class="Atext">The most helpful features are the organizational tools, such as flagging tickets based on priority</p>
+  <h1 class="ma-title">Beyond</h1><p class="Atext">The most helpful features are the organizational tools, such as flagging tickets based on priority</p>
                             <div class="buttonZZ">
                 <a href="#">Contact us</a>
             </div></div>   
 </div>
       
-      <div class="merged">  
-<div class="A">  
+      <div class="merged blue1">  
+<div class="XENON">    
 <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/saasduo000009.svg?v=1716065311616" alt="Logo">   
 </div>
-<div class="A">  
+<div class="A">    <h1 class="ma-title">Beyond</h1>
 <p class="Atext">The most helpful features are the organizational tools, such as flagging tickets based on priority</p>
 
                             <div class="buttonZZ">
@@ -1668,7 +1643,19 @@ toggleBtn29.textContent = "Learn more";
         </div>   
 </div>
       <style>
+                .XENON {
+        text-align: right !important;
+}
         
+        .yellow1 {
+    background: #ffef07;
+}
+                .green1 {
+    background: #7cf178;
+}
+                .blue1 {
+    background: #07f0ff;
+}
         
         .ma-title {
     max-width: 750px;
@@ -1708,21 +1695,17 @@ toggleBtn29.textContent = "Learn more";
           max-width: 500px;
     height: auto;
           margin-left: auto;
-          margin-right: auto;
 }
         .merged {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-margin-bottom: 15px;
-    padding: 16px 20px 12px 20px;
-    border: 1px solid #ebe5ebc9;
-    border-radius: 23px;
-    background: #ffffffab;
+margin-bottom: -5px;
+    padding: 35px 0px 35px 0px;
+    border-radius: 0px;
 }
         
                       .buttonZZ {
