@@ -414,8 +414,8 @@
       
               .grid-container44 {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             gap: 25px;
                            width: 100%;
                     max-width: 900px;
@@ -649,6 +649,12 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
              .ringen {
                 max-width: 100%;
            border-bottom: 1px solid grey;
+                   position: fixed;
+    top: 0;
+    max-width: 100%;
+    display: flex;
+    z-index: 1999992929292929299292929292999;
+
             }
       
                     .principale {
@@ -661,6 +667,9 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
                     max-width: 900px;
           margin-left: auto;
           margin-right: auto;
+                      
+                      
+                      
                       
         }
       
@@ -702,7 +711,7 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
         box-sizing: border-box;
         margin-left: auto;
     border-radius: 23px;
-margin-top: -135px;
+margin-top: 35px;
               margin-bottom: 40px;
     }
           
@@ -850,6 +859,22 @@ padding-left: 60px;    }
             border-radius: 5px;
         }
       
+      
+      
+      .large {
+    width: 98%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+      
     </style>
     <title>Grid Divs Example</title>
 </head>
@@ -868,9 +893,9 @@ padding-left: 60px;    }
           
         <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/SaaSduo29382398238Logo2938232938239232.svg?v=1716062091253" alt="Logo">
         <div class="center-buttons">
-            <button>Sessions</button>
-            <button>Speakers</button>
-            <button>Register</button>
+            <button href="#" >Sessions</button>
+            <button href="#1" >Speakers</button>
+            <button href="#2" >Register</button>
         </div>
         <div class="right-button">
             <button>Contact Us</button>
@@ -878,78 +903,33 @@ padding-left: 60px;    }
     </div> </div> </div>
   
   
+         
+<div class="large">
+<div class="largecol1">
   
-         
-         
-         
-         
-         
-         <div class="principale">
-
-<h1 class="big-title-dark">You Have a Fantastic Idea</h1><br>
-<h2 class="text-block-dark">
+  
+  
+  <div class="FormBlock1"><h2 class="text-block-dark">
 Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
 <span id="moreText23" class="hidden">
 — We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
 </span>
 <a href="#" id="toggleBtn23" class="fapy">Learn more</a>
-</h2>
-
-           
-             <div class="FormBlock1">
-    <h1 class="big-title-dark-blue">Create your saas</h1>
-                <div class="FormBlock">
-    <div class="FormField">
-              <div class="FormFieldBlock"><input type="text" class="dropdown-inputS" autofocus placeholder="Name your idea">
-              </div>
-              <div class="FormFieldBlock FormFieldBlockXXX"><button class="FormButton science" onclick="openPopup()">Go</button>
-              </div>
-
-      </div>
-      
-        <div class="FormSuggest">
-          
-<div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Video Documentary Series</div></div> 
-          
-<div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Products PDF Catalog</div></div> 
-          
-<div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Company branding assets</div></div> 
-      
-      
-      </div>    </div></div> 
+</h2><div class="FormBlock">
+<div class="FormField"><div class="FormFieldBlock"><input type="text" class="dropdown-inputS" autofocus placeholder="Name your idea"></div>
+<div class="FormFieldBlock FormFieldBlockXXX"><button class="FormButton science" onclick="openPopup()">Go</button></div>
+</div><div class="FormSuggest"><div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Video Documentary Series</div></div>          
+<div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Products PDF Catalog</div></div>          
+<div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Company branding assets</div></div>      
+</div></div></div> 
+  
   
 
+         
 </div>
-         
-         
-         
-         
+  <div class="largecol2">
     
-<div class="containerB">
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-const toggleBtn23 = document.getElementById("toggleBtn23");
-const moreText23 = document.getElementById("moreText23");
-toggleBtn23.addEventListener("click", function(event) {
-event.preventDefault();
-if (moreText23.classList.contains("hidden")) {
-moreText23.classList.remove("hidden");
-toggleBtn23.textContent = "Show less";
-} else {
-moreText23.classList.add("hidden");
-toggleBtn23.textContent = "Learn more";
-}
-});
-});
-</script>  
-</div>
-  
-  
-       
-  
-        <div class="united">
-  
+      
       <div class="grid-container44">
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-7.svg?v=1716148433893" alt="Icon">
@@ -980,10 +960,6 @@ toggleBtn23.textContent = "Learn more";
             <h3>Mon titre</h3>
         </div>
         <div class="grid-item44 multicolor-border2">
-            <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-16.svg?v=1716151315268" alt="Icon">
-            <h3>Mon titre</h3>
-        </div>
-        <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-17.svg?v=1716151424409" alt="Icon">
             <h3>Mon titre</h3>
         </div>
@@ -992,8 +968,38 @@ toggleBtn23.textContent = "Learn more";
             <h3>Mon titre</h3>
         </div>
     </div>
+         
+</div>
+</div>
+
+         
+         
+         
+    
+<div class="containerB">
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const toggleBtn23 = document.getElementById("toggleBtn23");
+const moreText23 = document.getElementById("moreText23");
+toggleBtn23.addEventListener("click", function(event) {
+event.preventDefault();
+if (moreText23.classList.contains("hidden")) {
+moreText23.classList.remove("hidden");
+toggleBtn23.textContent = "Show less";
+} else {
+moreText23.classList.add("hidden");
+toggleBtn23.textContent = "Learn more";
+}
+});
+});
+</script>  
+</div>
   
-      </div>  </div>    </div>
+  
+       
+  
+ </div>    </div>
   
   
   
