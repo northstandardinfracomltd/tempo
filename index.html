@@ -48,7 +48,7 @@
       
         .containerA {
             width: 100%;
-                    max-width: 900px;
+                    max-width: 950px;
           margin-left: auto;
           margin-right: auto;
                         padding-left: 20px;
@@ -1236,10 +1236,10 @@ toggleBtn2.textContent = "Learn more";
     font-family: "saasduoPAR" !important;
     font-weight: 100;
     letter-spacing: -0.2px;
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 15px !important;
     margin-left: 0px;
-    height: 50px;
+    height: 54px;
     padding-left: 23px;
     padding-right: 23px;
     padding-top: 9px;
@@ -1254,17 +1254,18 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
                         .button-CC1case1 {
             text-align: center !important;
     background-color: #f6f8fa !important;
-    color: #d9d9da;
+    color: #1e2329;
     padding: 8px 15px;
+                              margin-bottom: 12px;
                           border: 1px solid #d0d7de;
     cursor: pointer;
     font-family: "saasduoPAR" !important;
     font-weight: 100;
     letter-spacing: -0.2px;
-    font-size: 20px;
+    font-size: 22px;
     border-radius: 15px !important;
     margin-left: 0px;
-    height: 50px;
+    height: 54px;
     padding-left: 23px;
     padding-right: 23px;
     padding-top: 9px;
@@ -1427,9 +1428,10 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
    
               
               .clientband1 img {
-    max-width: 150px;
+    max-width: 160px;
         height: 30px;
-    margin-bottom: -4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
                  cursor: pointer !important;
 }
              
@@ -1438,6 +1440,7 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
     text-align: center;
     font-weight: 400;
     font-size: 24px;
+                    margin-bottom: 15px;
     font-family: "saasduoPAR";
     letter-spacing: 0px;
     color: #1b1b20;
@@ -1465,14 +1468,7 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
                 margin-bottom: 0px;
 }
           
-                            .unbirds:hover {
-    transform: scale(1.03);
-    transition-duration: 0.3s;
-                               border: 1px #f0ecf7 solid; 
-                              background: #fff;
-
-}
-          
+  
               
         .rouge {
                -webkit-text-fill-color: transparent;
@@ -1512,12 +1508,7 @@ background: -webkit-linear-gradient(70deg, #119a7a, #19d4a7);
 -webkit-background-clip: text;
 }   
              
-              
-.cas1 {
--webkit-text-fill-color: transparent;
-background: -webkit-linear-gradient(70deg, #703cac, #b37cf1);
--webkit-background-clip: text;
-}
+
               
         .noir {
             color: #1b1b20;
@@ -1637,7 +1628,7 @@ toggleBtn2999.textContent = "Learn more";
   
   </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Continuer</button>
+<button onclick="openPopup()" class="button button-CC1 science">Nous contacter</button>
 </div></div>
 <a href="URL_DE_VOTRE_LIEN" style="text-decoration: none; color: inherit;">
   <div class="clientband">
@@ -1645,7 +1636,7 @@ toggleBtn2999.textContent = "Learn more";
       <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-23.svg?v=1716812841026" alt="Logo">
     </div>
     <div class="clientband1">
-      <div class="imineos cas1">Découvrir notre cas client Luggit, une startup de services touristiques</div>
+      <div class="imineos cas1">Cas client startup<br>Système gestion des bagages</div>
       <button onclick="openPopup()" class="button button-CC1case1 science">Découvrir Luggit</button>
     </div>
   </div>
@@ -1654,23 +1645,58 @@ toggleBtn2999.textContent = "Learn more";
       
       
       
-<div class="unbirds">
+      
+      
+      
+      <div class="unbirds">
 <div class="sub-div multicolor-border">
 <div class="text">
-<p><span class="azurh">Logical</span> <span class="noir"> pour des logiciels personnalisés aux PMEs</span></p></div>
+  
+  
+  <h2 class="text-block999">
+<span class="azurh">Logical</span> pour des logiciels personnalisés aux PMEs
+<span id="moreText2999w" class="hidden">
+— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients
+</span>
+<a href="#" id="toggleBtn2999w" class="fapy">Lire la suite</a>
+</h2>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const toggleBtn2999w = document.getElementById("toggleBtn2999w");
+const moreText2999w = document.getElementById("moreText2999w");
+toggleBtn2999w.addEventListener("click", function(event) {
+event.preventDefault();
+if (moreText2999w.classList.contains("hidden")) {
+moreText2999w.classList.remove("hidden");
+toggleBtn2999w.textContent = "Show less";
+} else {
+moreText2999w.classList.add("hidden");
+toggleBtn2999w.textContent = "Learn more";
+}
+});
+});
+</script> 
+  
+  </div>
 <div class="button">
-<button onclick="openPopup()" class="button button-CC1 science">Continue</button>
+<button onclick="openPopup()" class="button button-CC1 science">Nous contacter</button>
 </div></div>
 <a href="URL_DE_VOTRE_LIEN" style="text-decoration: none; color: inherit;">
-  <div class="clientbandx1">
+  <div class="clientband">
     <div class="clientband1">
-      <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/OpenSourcerer_Bronze.png?v=1716817775582" alt="Logo">
+      <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-23.svg?v=1716812841026" alt="Logo">
     </div>
     <div class="clientband1">
-      <div class="imineos cas2">Exemple cas client startup de services touristiques</div>
+      <div class="imineos cas1">Cas client startup<br>Système gestion des bagages</div>
+      <button onclick="openPopup()" class="button button-CC1case1 science">Découvrir Luggit</button>
     </div>
   </div>
 </a>
+</div> 
+      
+      
+      
+
 </div>   
       
       
