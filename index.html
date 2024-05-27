@@ -604,13 +604,13 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
       
               .navbar {
             display: grid;
-            grid-template-columns: 20% 50% 30%;
+            grid-template-columns: 20% 80%;
             align-items: center;
-            padding: 10px;
+            padding: 20px 10px 20px 0px;
         }
         .navbar img {
-            max-width: 100%;
-            height: auto;
+            height: 52px;
+          margin-top: 2px;
         }
         .navbar .center-buttons {
             display: flex;
@@ -627,7 +627,46 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
     background-color: color(display-p3 0 0.50588 0.94902) !important;
     color: #fff !important;
     padding: 8px 20px 7px 20px !important;
-    border: none !important;
+    cursor: pointer !important;
+    font-family: "saasduoPAR" !important;
+    font-weight: 100 !important;
+    letter-spacing: -0.2px !important;
+    font-size: 22px !important;
+    border-radius: 15px !important;
+    margin-left: 10px !important;
+    height: 54px !important;
+    z-index: 999999999 !important;
+            border: 1px solid color(display-p3 0 0.50588 0.94902) !important;
+    -webkit-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+    -moz-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+    box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+}
+      
+            .CTAlog2 {
+    text-align: center !important;
+    background-color: #320e5300 !important;
+    color: #fff !important;
+    padding: 8px 20px 7px 20px !important;
+    border: 1px solid #654780 !important;
+    cursor: pointer !important;
+    font-family: "saasduoPAR" !important;
+    font-weight: 100 !important;
+    letter-spacing: -0.2px !important;
+    font-size: 22px !important;
+    border-radius: 15px !important;
+    margin-left: 5px !important;
+    height: 54px !important;
+    z-index: 999999999 !important;
+    -webkit-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+    -moz-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+    box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+}
+                  .CTAlog3 {
+    text-align: center !important;
+    background-color: #320e5300;
+    color: #fff !important;
+    padding: 8px 20px 7px 20px !important;
+    border: 1px solid #320e5300 !important;
     cursor: pointer !important;
     font-family: "saasduoPAR" !important;
     font-weight: 100 !important;
@@ -640,7 +679,15 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
     -webkit-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
     -moz-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
     box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
+                    
 }
+      
+                        .CTAlog3:hover {
+    background-color: #7944aa52;
+
+}
+      
+      
       
       
         .navbar .center-buttons button,
@@ -650,15 +697,7 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
             border-radius: 5px;
             cursor: pointer;
         }
-        .navbar .right-button button {
-            background: white;
-            color: black;
-        }
-        .navbar .center-buttons button {
-            background: transparent;
-            color: white;
-            border: 1px solid white;
-        }
+
         @media (max-width: 768px) {
             .navbar {
                 grid-template-columns: 1fr 200px;
@@ -681,12 +720,13 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
       
              .ringen {
     width: 100%;
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 1999992929292929299292929292999;
-    background: #320e53;
+    background: #320e5300;
     border-radius: 0px 0px 20px 20px;
                margin-bottom: -55px;
+               padding-top: 10px;
             }
       
                     .principale {
@@ -918,13 +958,9 @@ padding-left: 60px;    }
     <div class="navbar">
           
         <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/SaaSduo29382398238Logo2938232938239232.svg?v=1716062091253" alt="Logo">
-        <div class="center-buttons">
-                    
-<a href="sessions.html"><button>Sessions</button></a>
-<a href="speakers.html"><button>We're online</button></a>
-<a href="register.html"><button>Français</button></a>
-        </div>
         <div class="right-button">
+            <button class="CTAlog3">In English</button>
+                      <button class="CTAlog2">Ouvrir un chat avec un spécialiste</button>
             <button class="CTAlog">Être rappelé</button>
         </div>
     </div> </div> </div>
