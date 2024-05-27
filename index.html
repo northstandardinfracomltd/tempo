@@ -53,6 +53,10 @@
           margin-right: auto;
                         padding-left: 20px;
               padding-right: 20px;
+          gap: 25px;
+          display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
         }
       
             .containerB {
@@ -929,7 +933,7 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-9.svg?v=1716149056166" alt="Icon">
-            <h3>Fonctionnalités à la demande</h3>
+            <h3>Fonctionnalités spécifiques</h3>
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-10.svg?v=1716149184089" alt="Icon">
@@ -937,7 +941,7 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-12.svg?v=1716149398456" alt="Icon">
-            <h3>Statistiques pour des décisions informées</h3>
+            <h3>Mesures en temps réel</h3>
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-13.svg?v=1716149562481" alt="Icon">
@@ -945,19 +949,19 @@ Lorem ipsum every day, over 16k users benefit from our products, representing £
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-14.svg?v=1716150650784" alt="Icon">
-            <h3>Support et éditions 24/7</h3>
+            <h3>Adoption facile et autonome</h3>
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-15.svg?v=1716151075103" alt="Icon">
-            <h3>Mon titre</h3>
+            <h3>Hébergement et redondances</h3>
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-17.svg?v=1716151424409" alt="Icon">
-            <h3>Mon titre</h3>
+            <h3>Éditions à la demande 24/7</h3>
         </div>
         <div class="grid-item44 multicolor-border2">
             <img src="https://cdn.glitch.global/7aefa714-d318-48a4-8880-f5aee91469a4/Untitled-18.svg?v=1716151584715" alt="Icon">
-            <h3>Mon titre</h3>
+            <h3>Personnalisé à votre image</h3>
         </div>
     </div>
          
@@ -1206,6 +1210,7 @@ toggleBtn2.textContent = "Learn more";
   
             <style>
           .button-CC1 {
+            text-align: center !important;
     background-color: color(display-p3 0 0.50588 0.94902) !important;
     color: #fff;
     padding: 8px 15px;
@@ -1222,6 +1227,7 @@ toggleBtn2.textContent = "Learn more";
     padding-right: 23px;
     padding-top: 9px;
     z-index: 999999999;
+            width: 100%;
 -webkit-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
 -moz-box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
 box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
@@ -1358,16 +1364,14 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
               
               
             .clientband   {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    align-items: center;
+    display: block;
+    align-items: left;
     padding: 15px 30px 14px 30px;
     margin-bottom: 0px;
               margin-top: -1px;
     border: #px solid #f6f8fa;
     border-radius: 0px 0px 22px 22px;
     background: #fcf9ff;
-              height: 50px;
               cursor: pointer !important;
 }
                          .clientband:hover   {
@@ -1401,7 +1405,7 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
                 background: #fff;
                 border-radius: 23px;
                 padding: 0px;
-                margin-bottom: 25px;
+                margin-bottom: 0px;
 }
           
                             .unbirds:hover {
@@ -1465,14 +1469,12 @@ background: -webkit-linear-gradient(70deg, #703cac, #b37cf1);
               
                       .sub-div {
           cursor: pointer;
-            display: grid;
-            grid-template-columns: 85% 15%;
+            display: block;
             align-items: center;
             padding: 15px 30px 14px 30px;
           margin-bottom: 0px;
     border-radius: 23px 23px 0px 0px;
           background-color: transparent;
-                        height: 77px;
         }
               
         .button-CC1:hover       {
@@ -1550,7 +1552,34 @@ background: -webkit-linear-gradient(70deg, #703cac, #b37cf1);
 <div class="unbirds">
 <div class="sub-div multicolor-border">
 <div class="text">
-<p><span class="violet">Premier</span> <span class="noir">transforme vos idées en néo plateformes</span></p></div>
+  
+  
+<p><span class="violet">Premier</span> <span class="noir">transforme vos idées en néo plateformes</span></p>
+  <h2 class="text-block">
+<span class="violet">Premier</span> transforme vos idées en néo plateformes
+<span id="moreText2" class="hidden">
+— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients
+</span>
+<a href="#" id="toggleBtn2999" class="fapy">Learn more</a>
+</h2>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const toggleBtn2999 = document.getElementById("toggleBtn2999");
+const moreText2 = document.getElementById("moreText2");
+toggleBtn2999.addEventListener("click", function(event) {
+event.preventDefault();
+if (moreText2.classList.contains("hidden")) {
+moreText2.classList.remove("hidden");
+toggleBtn2.textContent = "Show less";
+} else {
+moreText2.classList.add("hidden");
+toggleBtn2.textContent = "Learn more";
+}
+});
+});
+</script> 
+  
+  </div>
 <div class="button">
 <button onclick="openPopup()" class="button button-CC1 science">Continue</button>
 </div></div>
