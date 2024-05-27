@@ -44,20 +44,7 @@
         overflow: hidden;
       }
 
-      
-      
-        .containerA {
-            width: 100%;
-                    max-width: 950px;
-          margin-left: auto;
-          margin-right: auto;
-                        padding-left: 20px;
-              padding-right: 20px;
-          gap: 25px;
-          display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-        }
+
       
             .containerB {
             width: 100%;
@@ -1195,30 +1182,7 @@ toggleItemsRandomlyOnScroll();
   
   
 <div class="containerB">
-<h1 class="big-title">Our solutions</h1>
-<h2 class="text-block">
-Lorem ipsum every day, over 16k users benefit from our products, representing £40M in client assets value.
-<span id="moreText2" class="hidden">
-— We provide round-the-clock assistance to users from 60 companies. While we showcase our popular clients, our primary focus is on delivering services to small and medium-sized businesses.
-</span>
-<a href="#" id="toggleBtn2" class="fapy">Learn more</a>
-</h2>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-const toggleBtn2 = document.getElementById("toggleBtn2");
-const moreText2 = document.getElementById("moreText2");
-toggleBtn2.addEventListener("click", function(event) {
-event.preventDefault();
-if (moreText2.classList.contains("hidden")) {
-moreText2.classList.remove("hidden");
-toggleBtn2.textContent = "Show less";
-} else {
-moreText2.classList.add("hidden");
-toggleBtn2.textContent = "Learn more";
-}
-});
-});
-</script>  
+<h1 class="big-title">Vos enjeux</h1>
 </div>
   
   
@@ -1276,7 +1240,12 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
 box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
 }
               
-              
+              .button-CC1case1:hover {
+    box-shadow: 0 0 0px 4px #008eff38;
+    cursor: pointer;
+    transition-duration: 0s;
+    background-color: #f6f8fa;
+}
               
                         .button-CC2 {
     background-color: #161b22 !important;
@@ -1459,15 +1428,28 @@ box-shadow: 0px 0px 50px -2px rgba(42, 7, 65, 0.14);
                  cursor: pointer !important;
 }
               
-              
-              .unbirds {
-                border: 1px #d0d7de solid; 
-                background: #fff;
-                border-radius: 23px;
-                padding: 0px;
-                margin-bottom: 0px;
+.containerA {
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+    align-items: start; /* Aligner les items au début de la ligne */
 }
-          
+
+.unbirds {
+    border: 1px #d0d7de solid;
+    background: #fff;
+    border-radius: 23px;
+    padding: 0px; /* Ajoutez un peu de padding pour espacer le contenu */
+    margin-bottom: 0px;
+}
+
+
   
               
         .rouge {
