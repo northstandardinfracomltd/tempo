@@ -1066,10 +1066,509 @@ padding-left: 60px;    }
       }
 
       
+      
+      #popup-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        z-index: 9999999999999999;
+        width: 100%;
+        height: 100vh;
+
+        background: #a0a0a015 !important;
+        -webkit-backdrop-filter: blur(
+          5px
+        ) !important;
+        backdrop-filter: blur(5px) !important;
+      }
+
+      #internalpop {
+        background-color: #0b1416;
+        max-width: 90%;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 14px;
+        border: 1px solid #252c2e;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: block;
+        filter: drop-shadow(0 0 0.75rem #252c2e);
+      }
+
+      
+      @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+              #internalpop {
+      width: 340px !important;
+      }
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+              #internalpop {
+      width: 340px !important;
+      }
+}
+      
+      
+      
+      #close-btn {
+        padding: 8px 12px;
+        cursor: pointer;
+        z-index: 99999999999999999;
+        border: 1px solid #0b1416;
+        background-color: #0b1416;
+        color: #05f0ff;
+        border-radius: 12px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "saasduoPAR" !important;
+        height: 42px;
+        letter-spacing: -0.3px;
+      }
+
+      input:focus,
+      textarea:focus,
+      button:focus {
+        outline: none;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .gum {
+        margin-top: 15px;
+        background: #1a282d;
+        border: 1px solid #1a282d;
+        border-radius: 18px;
+        text-align: left;
+        font-size: 20px !important;
+        font-family: "saasduoPAR" !important;
+        letter-spacing: 0px;
+        color: #fff;
+        line-height: 40px;
+        cursor: text;
+        width: 90%;
+        max-width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      
+      
+      @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+              .gum {
+        width: 78% !important;
+        max-width: 263px !important;
+      }
+        
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+              .gum {
+        width: 78% !important;
+        max-width: 263px !important;
+      }
+        
+}
+      
+      
+      .gum:hover {
+        box-shadow: 0 0 0px 4px #008eff38;
+      }
+
+      .gumbtn:hover {
+        box-shadow: 0 0 0px 4px #008eff38;
+      }
+
+      .gum::placeholder {
+        color: #fff;
+        font-family: "saasduoPAR" !important;
+        font-weight: 100;
+        letter-spacing: 0px;
+        line-height: 40px;
+        font-size: 20px;
+      }
+
+      @font-face {
+        font-family: proxima nova;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/fc3fa84bad39c1906ab5f12edfeeda77.otf);
+      }
+      @font-face {
+        font-family: proxima nova semibold;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/847b2e2eaaeffe475d49ab8586ed0938.otf);
+      }
+      @font-face {
+        font-family: proxima nova xbold;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/ff059c404b36c9ba4b07629da5c63673.otf);
+      }
+      @font-face {
+        font-family: proxima nova extrabold;
+        src: url(https://d1ayxb9ooonjts.cloudfront.net/80cc6392abe5652b5227ecff51ad2526.otf);
+      }
+
+      .gumbtn {
+        background-color: #d93b01;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-family: "saasduoPAR" !important;
+        font-weight: 100;
+        letter-spacing: -0.2px;
+        font-size: 20px;
+        border-radius: 15px !important;
+        margin-left: 0px;
+        margin-top: 13px;
+        margin-bottom: 30px;
+        height: 52px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        width: 90%;
+        max-width: 442px;
+             position: relative;
+      overflow: hidden;
+      }
+      
+      
+
+
+      
+      @media only screen and (max-width: 767px) and (orientation: portrait) {
+      .gumbtn {
+        margin-bottom: 20px !important;
+            width: 100% !important;
+    max-width: 305px !important;
+      }
+}
+
+      
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+
+            .gumbtn {
+        margin-bottom: 20px !important;
+                          width: 100% !important;
+    max-width: 305px !important;
+      }
+      }
+      
+      
+      
+      
+      
+      
+      
+  
+      
+      .gumbtn:hover {
+        background: #b13507;
+        border: 1px solid #962900;
+      }
+
+      .formX {
+        padding: 15px;
+      }
+
+      .popupTXT {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px !important;
+        font-family: "saasduoPAR" !important;
+        letter-spacing: 0px;
+        color: #fff;
+        line-height: 40px;
+        margin-bottom: 10px;
+        cursor: default;
+        padding-left: 12px;
+        padding-right: 12px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      .blur-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); 
+        z-index: 1; 
+        display: none;
+      }
+
+
+      #popup-container.open {
+        display: block;
+        z-index: 2; 
+      }
+
+      .gumtxtplus {
+        height: 100px !important;
+      }
+
+      .linky {
+        text-decoration: none !important;
+        color: #05f0ff !important;
+        cursor: pointer !important;
+      }
+      
+            .columnX2 {
+        padding: 0px;
+        z-index: 9999;
+      }
+
+      .sous-titreinfoable {
+        margin-top: 10px;
+        text-align: left;
+        font-size: 16px !important;
+        font-family: "saasduoPAR" !important;
+        letter-spacing: 0px;
+        color: #b7c5c8;
+        line-height: 26px;
+        font-weight: 500;
+        cursor: default;
+      }
+
+      .sticky-cta-bar {
+        background-color: #0f1a1c;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1999992929292929299292929292999;
+      }
+
+      .cta-text {
+        flex: 1;
+        margin-right: 10px;
+      }
+
+      .cta-button {
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .sticky-cta-bar {
+          flex-direction: column;
+          text-align: left !important;
+          padding: 10px;
+          padding-bottom: 20px !important;
+        }
+
+        .fermerinfoable {
+          margin-left: 8.5px;
+          margin-right: auto;
+        }
+
+        .cta-text {
+          margin-bottom: 12px;
+          margin-left: 10px;
+        }
+      }
+
+      .linkcookies {
+        color: #05f0ff !important;
+        text-decoration: none;
+      }
+
+      .linkcookies:hover {
+        text-decoration: none;
+      }
+      
+      
+          .fermerinfoable {
+        background-color: #d93b01;
+        color: #fff;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        font-family: "saasduoPAR" !important;
+        font-weight: 100;
+        letter-spacing: -0.2px;
+        font-size: 20px;
+        border-radius: 15px !important;
+        margin-left: 0px;
+        height: 50px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 9px;
+      }
+
+      .fermerinfoable:hover {
+        box-shadow: 0 0 0px 4px #008eff38;
+        cursor: pointer;
+        transition-duration: 0s;
+        background-color: #b13507;
+      }
+
+      .footer-containerX2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+        max-width: 1275px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+      }
+      
     </style>
     <title>Grid Divs Example</title>
 </head>
 <body>
+  
+    <div class="sticky-cta-bar" id="maDiv">
+      <div class="cta-text">
+        <div class="sous-titreinfoable lazyload">
+          We use cookies and similar technologies to remember your preferences,
+          understand your journey, and measure the effectiveness of features.
+          With the help of third parties (<a
+            target="_blank"
+            href="https://support.google.com/analytics/answer/12159447?hl=fr"
+            class="linkcookies"
+            >Google Analytics</a
+          >
+          and
+          <a
+            target="_blank"
+            href="/privacy"
+            class="linkcookies"
+            >Synergius</a
+          >), we store depersonalized data to retrieve statistics and improve
+          the performance of our site — By using
+          <a href="/" class="linkcookies">saasduo.com</a>, you agree to the use
+          of all cookies and our privacy policy, so we also invite you to read
+          our
+          <a target="_blank" href="/privacy" class="linkcookies"
+            >privacy policy.</a
+          >
+          We collect personal information from you only when you sign up for the
+          services.
+        </div>
+      </div>
+      <button class="fermerinfoable lazyload" onclick="masquerDiv()">
+        Accept all
+      </button>
+
+      <script>
+        function masquerDiv() {
+          var div = document.getElementById("maDiv");
+          div.style.display = "none";
+        }
+      </script>
+    </div>
+  
+  
+      <div id="popup-container">
+      <div id="internalpop">
+        <button id="close-btn" onclick="closePopup()">Cancel</button>
+        <p class="popupTXT">Share with us your request</p>
+
+        <div id="formX">
+          <form
+            id="FORM_ID"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbxBTCR2D2Gm1MFO21ZYytTUpLqqm2nUv-Q58JVUdV3sKwg9qE3cCy3qbaNhpuCo7ibSVw/exec"
+          >
+            <input
+              class="gum"
+              name="Emailx"
+              type="email"
+              placeholder="Email"
+              maxlength="35"
+              required
+            />
+            <input
+              class="gum"
+              name="Telx"
+              type="text"
+              placeholder="Phone"
+              maxlength="35"
+              required
+            />
+            <input
+              class="gum"
+              name="Entreprisex"
+              type="text"
+              placeholder="Company"
+              maxlength="35"
+              required
+            />
+
+            <textarea
+              class="gum gumtxtplus f2"
+              name="demandex"
+              placeholder="Request summary"
+              maxlength="400"
+            ></textarea
+            ><br />
+
+            <button type="submit" class="gumbtn">Submit</button>
+            
+            
+
+            <script type="text/javascript">
+              window.addEventListener("DOMContentLoaded", function () {
+                const yourForm = document.getElementById("FORM_ID");
+                yourForm.addEventListener("submit", function (e) {
+                  e.preventDefault();
+                  const data = new FormData(yourForm);
+                  const action = e.target.action;
+                  fetch(action, {
+                    method: "POST",
+                    body: data,
+                  }).then(() => {
+                    window.location.replace("/20398203723780283217390028370921321");
+                  });
+                });
+              });
+            </script>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openPopup() {
+        document.getElementById("popup-container").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popup-container").style.display = "none";
+      }
+    </script>
   
       <div class="ringen">
     
@@ -1092,7 +1591,7 @@ padding-left: 60px;    }
    
     
 <div class="containerMAG">
-<h1 class="big-titleMAG">L'idée de toujours vers la solution de tous les jours</h1>
+<h1 class="big-titleMAG">Un SaaS brillant pour votre idée</h1>
   
     <h2 class="text-block999MAG">Pour des logiciels personnalisés aux PMEs
 <span id="moreText2999wMAG" class="hidden">
