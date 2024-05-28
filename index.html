@@ -442,7 +442,7 @@
             grid-template-rows: repeat(3, 1fr);
             gap: 25px;
                            width: 100%;
-                    max-width: 900px;
+                    max-width: 950px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -468,9 +468,9 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
         }
 
         .grid-item44 img {
-            width: 52px;
-            height: 52px;
-          margin-top: 22px;
+            width: 55px;
+            height: 55px;
+          margin-top: 25px;
         }
 
         .grid-item44 h3 {
@@ -503,6 +503,8 @@ box-shadow: 0px 0px 46px -3px rgba(42, 7, 65, 0.2);
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
+
+                            height: 1200px;
                             
                        background: radial-gradient(farthest-side at bottom left,#3e1961,transparent 500px),radial-gradient(farthest-side at center,#3e1961,transparent),radial-gradient(farthest-side at top right,#3e1961,#3e1961,transparent 900px),radial-gradient(farthest-side at bottom right,#28044a,#28044a,transparent 900px);
                 width: 100%;
@@ -970,6 +972,19 @@ padding-left: 60px;    }
 }
       
       
+            .devant {
+    position: absolute;
+    z-index: 999299292299929292929292929292929299292929229999999999;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+      
+}
+      
+      
                   .containerMAG {
             width: 100%;
                     max-width: 950px;
@@ -1009,7 +1024,7 @@ padding-left: 60px;    }
         font-family: "saasduoPAR" !important;
         font-weight: 400;
         letter-spacing: 0px;
-        color: #000;
+        color: #fff;
         line-height: 41px;
         cursor: default;
         padding-left: 0px;
@@ -1022,7 +1037,8 @@ padding-left: 60px;    }
               z-index: 999999999999999999999999999999999999999999999999999999999999999999;
       }
       
-      
+
+
       
     </style>
     <title>Grid Divs Example</title>
@@ -1076,7 +1092,39 @@ moreText2999wMAG.textContent = "Learn more";
 </script> 
   
 <div class="FormBlock">
-<div class="FormField"><div class="FormFieldBlock"><input type="text" class="dropdown-inputS" autofocus placeholder="Name your idea"></div>
+<div class="FormField"><div class="FormFieldBlock"><input type="text" id="typingInput" class="dropdown-inputS" autofocus placeholder="Name your idea">
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const input = document.getElementById('typingInput');
+    const placeholders = ["Un arbre vert", "Un crabe orange", "Un élastique noir"];
+    let placeholderIndex = 0;
+    let charIndex = 0;
+    const typingSpeed = 100; // Speed of typing effect
+    const delayBetweenPlaceholders = 2000; // Delay before switching to the next placeholder
+
+    function type() {
+      if (charIndex < placeholders[placeholderIndex].length) {
+        input.placeholder = placeholders[placeholderIndex].substring(0, charIndex + 1);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(() => {
+          // Directly move to the next placeholder after delay
+          charIndex = 0;
+          placeholderIndex = (placeholderIndex + 1) % placeholders.length;
+          input.placeholder = ""; // Clear the placeholder immediately
+          setTimeout(type, typingSpeed); // Start typing the next placeholder
+        }, delayBetweenPlaceholders);
+      }
+    }
+
+    type();
+  });
+</script>
+
+
+  </div>
 <div class="FormFieldBlock FormFieldBlockXXX"><button class="FormButton science" onclick="openPopup()">Go</button></div>
 </div><div class="FormSuggest"><div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Video Documentary Series</div></div>          
 <div class="Sugg" onclick="openPopup()"><div class="suggestion" onclick="openPopup()">ie. Products PDF Catalog</div></div>          
