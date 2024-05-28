@@ -516,7 +516,7 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
 
-                            height: 1400px;
+                            min-height: 1400px;
                             
   background: radial-gradient(circle at center 40%, #7a41b0de, #340461 50%);
                 width: 100%;
@@ -669,6 +669,15 @@ text-align: center;
             height: 52px;
           margin-top: 2px;
         }
+      
+      
+      .navbar img:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    cursor: default !important;
+}
+      
+      
         .navbar .center-buttons {
             display: flex;
             justify-content: center;
@@ -1442,7 +1451,7 @@ width: 100%;
       
       
           .fermerinfoable {
-        background-color: rgb(12 163 127);
+        background-color: color(display-p3 0 0.50588 0.94902) !important;
         color: #fff;
         padding: 8px 15px;
         border: none;
@@ -1463,7 +1472,6 @@ width: 100%;
         box-shadow: 0 0 0px 4px #008eff38;
         cursor: pointer;
         transition-duration: 0s;
-        background-color: #b13507;
       }
 
       .footer-containerX2 {
@@ -1625,25 +1633,24 @@ width: 100%;
 <div class="containerMAG">
 <h1 class="big-titleMAG">Un SaaS brillant pour une expérience fantastique</h1>
   
-    <h2 class="text-block999MAG">
-      SaaSduo construit des logiciels et des plateformes
-<span id="moreText2999wMAG" class="hidden">
+<h2 class="text-block999MAG">SaaSduo construit des logiciels et des plateformes
+<span id="moreText2999wMAGsap" class="hidden">
 pour des missions critiquent qui aident les PME, institutions et les leaders de l'industrie à prospérer — Nous concevons des expériences et des systèmes personnalisés de bout en bout ; pour centraliser les fonctionnalités et activités externes ou internes.
 </span>
-<a href="#" id="toggleBtn2999wMAG" class="fapy2">Lire la suite</a>
+<a href="#" id="toggleBtn2999wMAGsap" class="fapy2">Lire la suite</a>
 </h2>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-const toggleBtn2999wMAG = document.getElementById("toggleBtn2999wMAG");
-const moreText2999wMAG = document.getElementById("moreText2999wMAG");
-toggleBtn2999wMAG.addEventListener("click", function(event) {
+const toggleBtn2999wMAGsap = document.getElementById("toggleBtn2999wMAGsap");
+const moreText2999wMAGsap = document.getElementById("moreText2999wMAGsap");
+toggleBtn2999wMAGsap.addEventListener("click", function(event) {
 event.preventDefault();
-if (moreText2999wMAG.classList.contains("hidden")) {
-moreText2999wMAG.classList.remove("hidden");
-toggleBtn2999wMAG.textContent = "Show less";
+if (moreText2999wMAGsap.classList.contains("hidden")) {
+moreText2999wMAGsap.classList.remove("hidden");
+toggleBtn2999wMAGsap.textContent = "Réduire";
 } else {
-moreText2999wMAG.classList.add("hidden");
-moreText2999wMAG.textContent = "Learn more";
+moreText2999wMAGsap.classList.add("hidden");
+toggleBtn2999wMAGsap.textContent = "Lire la suite";
 }
 });
 });
