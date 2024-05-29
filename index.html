@@ -1203,11 +1203,11 @@ width: 100%;
         padding: 8px 12px;
         cursor: pointer;
         z-index: 99999999999999999;
-        border: 1px solid #0b1416;
-        background-color: #0b1416;
-        color: #05f0ff;
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: color(display-p3 0 0.50588 0.94902);
         border-radius: 12px;
-        font-size: 20px;
+        font-size: 24px;
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 25px;
@@ -1230,14 +1230,14 @@ width: 100%;
 
       .gum {
         margin-top: 15px;
-        background: #1a282d;
-        border: 1px solid #1a282d;
-        border-radius: 18px;
+        background: #f6f8fa;
+        border: 1px solid #f6f8fa;
+        border-radius: 15px;
         text-align: left;
         font-size: 22px !important;
         font-family: "saasduoPAR" !important;
         letter-spacing: 0px;
-        color: #fff;
+        color: #000;
         line-height: 40px;
         cursor: text;
         width: 90%;
@@ -1248,6 +1248,8 @@ width: 100%;
         padding-bottom: 7px;
         margin-left: auto;
         margin-right: auto;
+        
+
       }
 
       
@@ -1280,7 +1282,7 @@ width: 100%;
       }
 
       .gum::placeholder {
-        color: #fff;
+        color: #bcc5ce;
         font-family: "saasduoPAR" !important;
         font-weight: 100;
         letter-spacing: 0px;
@@ -1375,7 +1377,7 @@ width: 100%;
         font-size: 24px !important;
         font-family: "saasduoPAR" !important;
         letter-spacing: 0px;
-        color: #fff;
+        color: #000;
         line-height: 40px;
         margin-bottom: 10px;
         cursor: default;
@@ -1500,10 +1502,10 @@ width: 100%;
         font-family: "saasduoPAR" !important;
         font-weight: 100;
         letter-spacing: -0.2px;
-        font-size: 20px;
+        font-size: 22px;
         border-radius: 15px !important;
         margin-left: 0px;
-        height: 50px;
+        height: 55px;
         padding-left: 23px;
         padding-right: 23px;
         padding-top: 9px;
@@ -1556,8 +1558,8 @@ width: 100%;
   
       <div id="popup-container">
       <div id="internalpop">
-        <button id="close-btn" onclick="closePopup()">Cancel</button>
-        <p class="popupTXT">Share with us your request</p>
+        <button id="close-btn" onclick="closePopup()">Retour</button>
+        <p class="popupTXT">Veuillez compléter ce formulaire</p>
 
         <div id="formX">
           <form
@@ -1577,7 +1579,7 @@ width: 100%;
               class="gum"
               name="Telx"
               type="text"
-              placeholder="Phone"
+              placeholder="Téléphone"
               maxlength="35"
               required
             />
@@ -1585,7 +1587,7 @@ width: 100%;
               class="gum"
               name="Entreprisex"
               type="text"
-              placeholder="Company"
+              placeholder="Entreprise"
               maxlength="35"
               required
             />
@@ -1593,12 +1595,12 @@ width: 100%;
             <textarea
               class="gum gumtxtplus f2"
               name="demandex"
-              placeholder="Request summary"
+              placeholder="Message ou description"
               maxlength="400"
             ></textarea
             ><br />
 
-            <button type="submit" class="gumbtn">Submit</button>
+            <button type="submit" class="gumbtn">Enregistrer</button>
             
             
 
