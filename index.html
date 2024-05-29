@@ -810,15 +810,17 @@ text-align: center;
    display: none !important;
 }
 }
-      
-      @media only screen and (max-width: 767px) { 
-.right-button {
-   display: none !important;
-}
-}
+
       
       
             @media (max-width: 900px) {
+              
+              
+              .right-button {
+   display: none !important;
+}
+              
+              
 .grid-container44 {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
@@ -947,6 +949,11 @@ text-align: center;
      .mobilehide    {
     display: none !important;
 }     
+              .seal {
+    width: 245px !important;
+    margin-top: 35px;
+}
+              
               
 }
 
@@ -1355,6 +1362,7 @@ width: 100%;
         font-family: "saasduoPAR" !important;
         height: 42px;
         letter-spacing: -0.3px;
+        margin-bottom: 15px;
       }
 
       input:focus,
@@ -1829,7 +1837,7 @@ toggleBtn2999wMAGsap.textContent = "Lire la suite";
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const input = document.getElementById('typingInput');
-    const placeholders = ["Entrez un titre", "Indiquez un objet", "Mentionnez un usage"];
+    const placeholders = ["Indiquez un titre", "Indiquez un objet", "Indiquez un usage"];
     let placeholderIndex = 0;
     let charIndex = 0;
     const typingSpeed = 100; // Speed of typing effect
@@ -3036,7 +3044,7 @@ margin-bottom: 45px;
           height: 5px;
 }
                                .seal {
-   width: 300px !important;
+   width: 300px ;
           margin-top: 35px;
 }
         
