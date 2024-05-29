@@ -802,14 +802,57 @@ text-align: center;
             cursor: pointer;
         }
 
-        @media (max-width: 768px) {
-            .navbar {
-                grid-template-columns: 1fr 200px;
-            }
             .navbar .center-buttons {
                 display: none;
             }
         }
+      
+      @media (max-width: 768px) {
+.right-button {
+   display: none !important;
+}
+}
+      
+      @media only screen and (max-width: 767px) { 
+.right-button {
+   display: none !important;
+}
+}
+      
+      
+            @media (max-width: 900px) {
+.grid-container44 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+              
+              .grid-item44 {
+        max-width: 300px;
+        width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+}
+              
+                            .container2 {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+              
+                                          .merged {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+              
+              
+              .containerA {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+              .unbirds {
+        max-width: 300px;
+        width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+}
+}
+
       
       
        .wrestling {
